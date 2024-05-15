@@ -26,15 +26,23 @@ defmodule Example do
     # NumbersExample.printGreaterCommonDivisor(1300, 200)
     # NumbersExample.printGreaterCommonDivisor(256, 240)
 
+    # IO.inspect(DateTimeExample.getCurrDate())
     # DateTimeExample.printTime(15, 32, 20)
     # DateTimeExample.printTime(21, 47, 59)
     # DateTimeExample.printDate(2016, 5, 25)
     # DateTimeExample.printDate(1990, 3, 22)
     # DateTimeExample.printDate(1987, 4, 29)
     # DateTimeExample.printDateTime()
-    IO.inspect(DateTimeExample.getCurrDate())
+    # DateTimeExample.howLongTillNextYear()
 
-    DateTimeExample.howLongTillNextYear()
+    # myTuple = {:bronze, :silver}
+    # IO.inspect(TuplesExample.grabSize(myTuple))
+    # IO.inspect(TuplesExample.addItem(myTuple, :gold))
+    # TuplesExample.doAppendSomeItemsThenPrint(myTuple)
+    # IO.puts(TuplesExample.getAverage({5, 8, 12, 15, 4}))
+
+    # EnumerableExample.iterateOverTeams()
+    EnumerableExample.iterateOverWarriors()
   end
 
   def printConst do

@@ -28,13 +28,28 @@ defmodule DateTimeExample do
   end
 
   def howLongTillNextYear() do
-    # now = DateTimeExample.getCurrDate()
-    now = DateTime.utc_now(:second)
     nxt_d = Date.new!(2025, 1, 1)
     nxt_t = Time.new!(0, 0, 0, 0)
     new_year_date = DateTime.new!(nxt_d, nxt_t, "Etc/UTC")
+
+    now = DateTime.utc_now(:second)
     diff = DateTime.diff(new_year_date, now, :second)
 
     IO.inspect(diff)
+    # yields Integer
+    days = div(diff, 24 * 60 * 60)
+    # days2 = trunc(round(diff / (24 * 60 * 60)))
+    hours = rem(div(diff, 24 * 60), 24)
+    mins = rem(div(diff, 60), 60)
+    secs = rem(diff, 60)
+
+    resultAsTuple = {:days, days, :hours, hours, :minutes, mins, :seconds, secs}
+    resultAsList = [days, hours, mins, secs]
+    resultAsMap = %{days: days, hours: hours, minutes: mins, seconds: secs}
+
+    IO.puts("time until next year")
+    IO.inspect(resultAsTuple)
+    IO.inspect(resultAsList)
+    IO.inspect(resultAsMap)
   end
 end
