@@ -7,6 +7,7 @@ defmodule Example do
     Example.main()
     Supervisor.start_link([], strategy: :one_for_one)
   end
+
   def main do
     # printConst()
     # showUUID()
@@ -14,7 +15,26 @@ defmodule Example do
 
     # StringAtomExample.printAhoyAtom()
     # StringAtomExample.printMoreAtoms()
-    StringAtomExample.memberShipTest()
+    # StringAtomExample.printMsgWithLineBreaks()
+    # StringAtomExample.printCharCodes()
+    # StringAtomExample.memberShipTest()
+
+    # NumbersExample.printSomeNumbers()
+    # NumbersExample.printHighPrecisionNumbers()
+    # NumbersExample.printCeilAtPrecision(0.7, 1)
+    # NumbersExample.printCeilAtPrecision(0.7, 0)
+    # NumbersExample.printGreaterCommonDivisor(1300, 200)
+    # NumbersExample.printGreaterCommonDivisor(256, 240)
+
+    # DateTimeExample.printTime(15, 32, 20)
+    # DateTimeExample.printTime(21, 47, 59)
+    # DateTimeExample.printDate(2016, 5, 25)
+    # DateTimeExample.printDate(1990, 3, 22)
+    # DateTimeExample.printDate(1987, 4, 29)
+    # DateTimeExample.printDateTime()
+    IO.inspect(DateTimeExample.getCurrDate())
+
+    DateTimeExample.howLongTillNextYear()
   end
 
   def printConst do
@@ -29,7 +49,4 @@ defmodule Example do
   def hello do
     :"Hello world"
   end
-
-
-
 end

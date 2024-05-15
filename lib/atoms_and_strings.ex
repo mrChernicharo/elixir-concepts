@@ -32,5 +32,15 @@ defmodule StringAtomExample do
 
   end
 
+  def printMsgWithLineBreaks do
+    IO.puts("This\nis\na\nnew\nmessage\n")
+    IO.puts("After line break")
+  end
+
+  def printCharCodes do
+    IO.puts(0)
+    IO.puts(?a)
+    IO.puts(?ç)
+  end
 
 end
