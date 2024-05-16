@@ -42,7 +42,14 @@ defmodule Example do
     # IO.puts(TuplesExample.getAverage({5, 8, 12, 15, 4}))
 
     # EnumerableExample.iterateOverTeams()
-    EnumerableExample.iterateOverWarriors()
+    # EnumerableExample.iterateOverWarriors()
+
+    # StructsExample.heroesAndWeapons()
+
+    # IO.inspect(UserInputExample.module_info())
+
+    # UserInputExample.runExample()
+    UserInputExample.runExample2()
   end
 
   def printConst do
