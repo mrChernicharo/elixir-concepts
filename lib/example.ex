@@ -49,7 +49,10 @@ defmodule Example do
     # IO.inspect(UserInputExample.module_info())
 
     # UserInputExample.runExample()
-    UserInputExample.runExample2()
+    # UserInputExample.runExample2()
+
+    # ListOpsExample.checkGrades()
+    ListOpsExample.fibonacci()
   end
 
   def printConst do
